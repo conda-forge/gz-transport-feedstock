@@ -7,7 +7,7 @@ channel_targets:
 cxx_compiler:
 - vs2019
 libprotobuf:
-- 4.25.1
+- 4.25.2
 sqlite:
 - '3'
 target_platform:
