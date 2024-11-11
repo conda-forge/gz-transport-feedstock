@@ -1,3 +1,5 @@
+BUILD:
+- aarch64-conda_cos7-linux-gnu
 c_compiler:
 - gcc
 c_compiler_version:
@@ -6,8 +8,10 @@ c_stdlib:
 - sysroot
 c_stdlib_version:
 - '2.17'
+cdt_arch:
+- aarch64
 cdt_name:
-- cos7
+- conda
 channel_sources:
 - conda-forge
 channel_targets:
@@ -21,7 +25,7 @@ docker_image:
 libabseil:
 - '20240116'
 libprotobuf:
-- 4.25.3
+- 5.28.2
 libuuid:
 - '2'
 pin_run_as_build:
@@ -35,15 +39,11 @@ python:
 sqlite:
 - '3'
 target_platform:
-- linux-64
+- linux-aarch64
 zeromq:
 - 4.3.5
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
-- - c_stdlib_version
-  - cdt_name
 - - libabseil
   - libprotobuf
-- - python
-  - channel_sources

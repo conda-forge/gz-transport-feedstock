@@ -29,5 +29,3 @@ zeromq:
 zip_keys:
 - - libabseil
   - libprotobuf
-- - python
-  - channel_sources

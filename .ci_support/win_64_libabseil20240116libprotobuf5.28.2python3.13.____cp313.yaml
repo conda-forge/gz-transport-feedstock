@@ -11,7 +11,7 @@ cxx_compiler:
 libabseil:
 - '20240116'
 libprotobuf:
-- 4.25.3
+- 5.28.2
 pin_run_as_build:
   python:
     min_pin: x.x
@@ -19,7 +19,7 @@ pin_run_as_build:
 pybind11_abi:
 - '4'
 python:
-- 3.11.* *_cpython
+- 3.13.* *_cp313
 sqlite:
 - '3'
 target_platform:
@@ -29,5 +29,3 @@ zeromq:
 zip_keys:
 - - libabseil
   - libprotobuf
-- - python
-  - channel_sources
