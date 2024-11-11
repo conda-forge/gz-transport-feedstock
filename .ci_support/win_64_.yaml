@@ -4,13 +4,12 @@ c_stdlib:
 - vs
 channel_sources:
 - conda-forge
-- conda-forge/label/python_rc,conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
 - vs2019
 libprotobuf:
-- 5.27.5
+- 5.28.2
 sqlite:
 - '3'
 target_platform:
