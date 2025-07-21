@@ -9,7 +9,7 @@ channel_targets:
 cxx_compiler:
 - vs2022
 libprotobuf:
-- 5.29.3
+- 6.31.1
 sqlite:
 - '3'
 target_platform:
