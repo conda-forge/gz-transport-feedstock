@@ -85,7 +85,9 @@ outputs:
         - pytest                                 # [build_platform != target_platform]
       host:
         - {{ pin_subpackage(cxx_name, exact=True) }}
-        - python 
+        - python
+        - libgz-math8 8.1.1.*
+        - libgz-msgs11 11.1.0.* *_0
         - libcxx 20.1.8 *_0
         - pybind11 3.0.0 *_0
         - libexpat 2.7.0
