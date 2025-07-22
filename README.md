@@ -14,6 +14,38 @@ Current build status
 
 
 <table>
+    
+  <tr>
+    <td>Azure</td>
+    <td>
+      <details>
+        <summary>
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17600&branchName=main">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gz-transport-feedstock?branchName=main">
+          </a>
+        </summary>
+        <table>
+          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
+          <tbody><tr>
+              <td>osx_64_python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17600&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gz-transport-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.9.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17600&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gz-transport-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.9.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+    </td>
+  </tr>
 </table>
 
 Current release info
@@ -22,6 +54,8 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-gz--transport14-green.svg)](https://anaconda.org/conda-forge/gz-transport14) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gz-transport14.svg)](https://anaconda.org/conda-forge/gz-transport14) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gz-transport14.svg)](https://anaconda.org/conda-forge/gz-transport14) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gz-transport14.svg)](https://anaconda.org/conda-forge/gz-transport14) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-gz--transport14--python-green.svg)](https://anaconda.org/conda-forge/gz-transport14-python) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gz-transport14-python.svg)](https://anaconda.org/conda-forge/gz-transport14-python) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gz-transport14-python.svg)](https://anaconda.org/conda-forge/gz-transport14-python) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gz-transport14-python.svg)](https://anaconda.org/conda-forge/gz-transport14-python) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-libgz--transport14-green.svg)](https://anaconda.org/conda-forge/libgz-transport14) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/libgz-transport14.svg)](https://anaconda.org/conda-forge/libgz-transport14) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/libgz-transport14.svg)](https://anaconda.org/conda-forge/libgz-transport14) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/libgz-transport14.svg)](https://anaconda.org/conda-forge/libgz-transport14) |
 
 Installing gz-transport
 =======================
@@ -33,16 +67,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `gz-transport14` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `gz-transport14, gz-transport14-python, libgz-transport14` can be installed with `conda`:
 
 ```
-conda install gz-transport14
+conda install gz-transport14 gz-transport14-python libgz-transport14
 ```
 
 or with `mamba`:
 
 ```
-mamba install gz-transport14
+mamba install gz-transport14 gz-transport14-python libgz-transport14
 ```
 
 It is possible to list all of the versions of `gz-transport14` available on your platform with `conda`:
