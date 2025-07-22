@@ -20,7 +20,6 @@ cmake ${CMAKE_ARGS} -GNinja .. \
     -DPython3_EXECUTABLE:PATH=$PYTHON \
     -DPYTHON_EXECUTABLE:PATH=$PYTHON \
     -DPython3_INCLUDE_DIR:PATH=$Python3_INCLUDE_DIR \
-    
     -DBUILD_TESTING:BOOL=ON
 
 cmake --build . --config Release --verbose
