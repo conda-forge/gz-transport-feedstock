@@ -17,8 +17,8 @@ source:
 
 build:
   number: 1
-  skip: true  # [(target_platform not in ("osx-64", "osx-arm64")) or python != "3.9.*"]
-
+  skip: true  # [(target_platform not in ("osx-64", "osx-arm64")) or py != 39]
+ 
 outputs:
   - name: {{ cxx_name }}
     script: build_cxx.sh  # [unix]
@@ -85,8 +85,11 @@ outputs:
         - pytest                                 # [build_platform != target_platform]
       host:
         - {{ pin_subpackage(cxx_name, exact=True) }}
-        - python
-        - pybind11
+        - python 
+        - libcxx 20.1.8 *_0
+        - pybind11 3.0.0 *_0
+        - libsqlite 3.50.2
+        - libexpat 2.7.0
         - pybind11-abi
         - pytest
         - gz-msgs11-python 11.1.0 *_0
