@@ -88,7 +88,7 @@ outputs:
         - pybind11
         - pybind11-abi
         - pytest
-        - gz-msgs11-python
+        - gz-msgs11-python 11.1.0 *_0
         # Workaround for errors of type
         # package libgz-sim7-<..> requires <...>, but none of the providers can be installed
         - libabseil
