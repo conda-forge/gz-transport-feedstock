@@ -87,7 +87,7 @@ outputs:
         - {{ pin_subpackage(cxx_name, exact=True) }}
         - python
         - libgz-math8
-        - libgz-msgs11 11.1.0.* *_0
+        - libgz-msgs11
         - libcxx
         - pybind11
         - libexpat
