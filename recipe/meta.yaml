@@ -17,7 +17,7 @@ source:
 
 build:
   number: 1
-  skip: true  # [(target_platform not in ("osx-64", "osx-arm64")) or py != 39]
+  skip: true  # [(target_platform not in ("osx-64", "osx-arm64"))]
  
 outputs:
   - name: {{ cxx_name }}
