@@ -88,12 +88,12 @@ outputs:
         - python
         - libgz-math8
         - libgz-msgs11 11.1.0.* *_0
-        - libcxx 20.1.8 *_0
-        - pybind11 3.0.0 *_0
-        - libexpat 2.7.0
+        - libcxx
+        - pybind11
+        - libexpat
         - pybind11-abi
         - pytest
-        - gz-msgs11-python 11.1.0 *_0
+        - gz-msgs11-python
         # Workaround for errors of type
         # package libgz-sim7-<..> requires <...>, but none of the providers can be installed
         - libabseil
