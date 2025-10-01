@@ -1,9 +1,9 @@
 context:
   component_name: transport
   repo_name: gz-${{ component_name }}
-  version: 14.1.0
-  major_version: 14
-  name: ${{ repo_name }}${{ major_version }}
+  version: 15.0.0
+  major_version: 15
+  name: ${{ repo_name }}
   component_version: ${{ component_name }}${{ major_version }}
   cxx_name: lib${{ name }}
   python_name: ${{ name }}-python
@@ -14,12 +14,10 @@ recipe:
 
 source:
   - url: https://github.com/gazebosim/${{ repo_name }}/archive/${{ repo_name }}${{ major_version }}_${{ version }}.tar.gz
-    sha256: 3993d6272eb0c5a2ec94807b18ae02091b8a1b1723a345a83332de3677baff9a
-    patches:
-      - fixprotobuf30.patch
+    sha256: ca9e9a3dea208f4be96043a34b8e184e0f8015705c4f9ff1efa813d588f197e9
 
 build:
-  number: 3
+  number: 0
 
 outputs:
   - package:
@@ -53,12 +51,14 @@ outputs:
             - cross-python_${{ target_platform }}
       host:
         - python ${{ python_min }}.*
-        - libgz-cmake4
-        - libgz-msgs11
-        - libgz-tools2
-        - libgz-utils3
+        - libgz-cmake
+        - libgz-msgs
+        - libgz-tools
+        - libgz-utils
         - cppzmq
         - zeromq
+        - libzenohc
+        - libzenohcxx
         - if: linux
           then:
             - libuuid
@@ -117,20 +117,24 @@ outputs:
         - pybind11
         - pybind11-abi
         - pytest
-        - gz-msgs11-python
+        - gz-msgs-python
+        # We depend on gz-msgs to ensure that the version of gz-msgs and gz-msgs-python are compatible
+        - gz-msgs
         # Workaround for errors of type
         # package libgz-sim7-<..> requires <...>, but none of the providers can be installed
         - libabseil
         - libprotobuf
-        - libgz-msgs11
+        - libgz-msgs
       run:
         - ${{ pin_subpackage(cxx_name, exact=True) }}
         - python
-        - gz-msgs11-python
+        - gz-msgs-python
+        # We depend on gz-msgs to ensure that the version of gz-msgs and gz-msgs-python are compatible
+        - gz-msgs
     tests:
       - python:
           imports:
-            - gz.transport14
+            - gz.transport
 
   - package:
       name: ${{ name }}
@@ -160,7 +164,7 @@ outputs:
               - if not exist %PREFIX%\\Library\\lib\\cmake\\${{ name }}\\${{ name }}-config.cmake exit 1
       - python:
           imports:
-            - gz.transport14
+            - gz.transport
 
 about:
   homepage: https://github.com/gazebosim/${{ repo_name }}
