@@ -6,10 +6,8 @@ c_stdlib:
 - sysroot
 c_stdlib_version:
 - '2.17'
-cdt_name:
-- conda
 channel_sources:
-- conda-forge,conda-forge/label/python_rc
+- conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
@@ -24,10 +22,18 @@ libprotobuf:
 - 6.31.1
 libuuid:
 - '2'
+pin_run_as_build:
+  python:
+    min_pin: x.x
+    max_pin: x.x
 pybind11_abi:
 - '11'
-python_min:
-- '3.10'
+python:
+- 3.10.* *_cpython
+- 3.11.* *_cpython
+- 3.12.* *_cpython
+- 3.13.* *_cp313
+- 3.14.* *_cp314
 sqlite:
 - '3'
 target_platform:
