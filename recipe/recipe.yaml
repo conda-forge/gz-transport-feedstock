@@ -19,7 +19,7 @@ source:
       - 619.patch
 
 build:
-  number: 2
+  number: 3
 
 outputs:
   - package:
@@ -92,14 +92,14 @@ outputs:
         - pkg-config
         - if: build_platform != target_platform
           then:
-            - python ${{ python_min }}.*
+            - python
             - cross-python_${{ target_platform }}
             - pybind11
             - pybind11-abi
             - pytest
       host:
         - ${{ pin_subpackage(cxx_name, exact=True) }}
-        - python ${{ python_min }}.*
+        - python
         - pybind11
         - pybind11-abi
         - pytest
