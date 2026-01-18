@@ -27,87 +27,45 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_channel_sourcesconda-forge</td>
+              <td>linux_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17600&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gz-transport-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_channel_sourcesconda-forge" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gz-transport-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_channel_sourcesconda-forgeconda-forgelabelpython_rc</td>
+              <td>linux_aarch64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17600&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gz-transport-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_channel_sourcesconda-forgeconda-forgelabelpython_rc" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gz-transport-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_channel_sourcesconda-forge</td>
+              <td>linux_ppc64le</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17600&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gz-transport-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_channel_sourcesconda-forge" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gz-transport-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_channel_sourcesconda-forgeconda-forgelabelpython_rc</td>
+              <td>osx_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17600&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gz-transport-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_channel_sourcesconda-forgeconda-forgelabelpython_rc" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gz-transport-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_channel_sourcesconda-forge</td>
+              <td>osx_arm64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17600&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gz-transport-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forge" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gz-transport-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_ppc64le_channel_sourcesconda-forgeconda-forgelabelpython_rc</td>
+              <td>win_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17600&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gz-transport-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_channel_sourcesconda-forgeconda-forgelabelpython_rc" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_channel_sourcesconda-forge</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17600&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gz-transport-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forge" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_channel_sourcesconda-forgeconda-forgelabelpython_rc</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17600&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gz-transport-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_channel_sourcesconda-forgeconda-forgelabelpython_rc" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_channel_sourcesconda-forge</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17600&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gz-transport-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forge" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rc</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17600&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gz-transport-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rc" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_channel_sourcesconda-forge</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17600&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gz-transport-feedstock?branchName=main&jobName=win&configuration=win%20win_64_channel_sourcesconda-forge" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_channel_sourcesconda-forgeconda-forgelabelpython_rc</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17600&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gz-transport-feedstock?branchName=main&jobName=win&configuration=win%20win_64_channel_sourcesconda-forgeconda-forgelabelpython_rc" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gz-transport-feedstock?branchName=main&jobName=win&configuration=win%20win_64_" alt="variant">
                 </a>
               </td>
             </tr>
@@ -123,8 +81,11 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-gz--transport-green.svg)](https://anaconda.org/conda-forge/gz-transport) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gz-transport.svg)](https://anaconda.org/conda-forge/gz-transport) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gz-transport.svg)](https://anaconda.org/conda-forge/gz-transport) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gz-transport.svg)](https://anaconda.org/conda-forge/gz-transport) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-gz--transport--python-green.svg)](https://anaconda.org/conda-forge/gz-transport-python) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gz-transport-python.svg)](https://anaconda.org/conda-forge/gz-transport-python) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gz-transport-python.svg)](https://anaconda.org/conda-forge/gz-transport-python) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gz-transport-python.svg)](https://anaconda.org/conda-forge/gz-transport-python) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-gz--transport13-green.svg)](https://anaconda.org/conda-forge/gz-transport13) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gz-transport13.svg)](https://anaconda.org/conda-forge/gz-transport13) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gz-transport13.svg)](https://anaconda.org/conda-forge/gz-transport13) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gz-transport13.svg)](https://anaconda.org/conda-forge/gz-transport13) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-gz--transport13--python-green.svg)](https://anaconda.org/conda-forge/gz-transport13-python) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gz-transport13-python.svg)](https://anaconda.org/conda-forge/gz-transport13-python) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gz-transport13-python.svg)](https://anaconda.org/conda-forge/gz-transport13-python) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gz-transport13-python.svg)](https://anaconda.org/conda-forge/gz-transport13-python) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-libgz--transport-green.svg)](https://anaconda.org/conda-forge/libgz-transport) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/libgz-transport.svg)](https://anaconda.org/conda-forge/libgz-transport) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/libgz-transport.svg)](https://anaconda.org/conda-forge/libgz-transport) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/libgz-transport.svg)](https://anaconda.org/conda-forge/libgz-transport) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-libgz--transport13-green.svg)](https://anaconda.org/conda-forge/libgz-transport13) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/libgz-transport13.svg)](https://anaconda.org/conda-forge/libgz-transport13) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/libgz-transport13.svg)](https://anaconda.org/conda-forge/libgz-transport13) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/libgz-transport13.svg)](https://anaconda.org/conda-forge/libgz-transport13) |
 
 Installing gz-transport
@@ -137,41 +98,41 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `gz-transport13, gz-transport13-python, libgz-transport13` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `gz-transport, gz-transport-python, gz-transport13, gz-transport13-python, libgz-transport, libgz-transport13` can be installed with `conda`:
 
 ```
-conda install gz-transport13 gz-transport13-python libgz-transport13
-```
-
-or with `mamba`:
-
-```
-mamba install gz-transport13 gz-transport13-python libgz-transport13
-```
-
-It is possible to list all of the versions of `gz-transport13` available on your platform with `conda`:
-
-```
-conda search gz-transport13 --channel conda-forge
+conda install gz-transport gz-transport-python gz-transport13 gz-transport13-python libgz-transport libgz-transport13
 ```
 
 or with `mamba`:
 
 ```
-mamba search gz-transport13 --channel conda-forge
+mamba install gz-transport gz-transport-python gz-transport13 gz-transport13-python libgz-transport libgz-transport13
+```
+
+It is possible to list all of the versions of `gz-transport` available on your platform with `conda`:
+
+```
+conda search gz-transport --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search gz-transport --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search gz-transport13 --channel conda-forge
+mamba repoquery search gz-transport --channel conda-forge
 
-# List packages depending on `gz-transport13`:
-mamba repoquery whoneeds gz-transport13 --channel conda-forge
+# List packages depending on `gz-transport`:
+mamba repoquery whoneeds gz-transport --channel conda-forge
 
-# List dependencies of `gz-transport13`:
-mamba repoquery depends gz-transport13 --channel conda-forge
+# List dependencies of `gz-transport`:
+mamba repoquery depends gz-transport --channel conda-forge
 ```
 
 
@@ -196,12 +157,12 @@ it is possible to build and upload installable packages to the
 [conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
-To manage the continuous integration and simplify feedstock maintenance
+To manage the continuous integration and simplify feedstock maintenance,
 [conda-smithy](https://github.com/conda-forge/conda-smithy) has been developed.
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
-For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
+For more information, please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
@@ -228,7 +189,7 @@ merged, the recipe will be re-built and uploaded automatically to the
 everybody to install and use from the `conda-forge` channel.
 Note that all branches in the conda-forge/gz-transport-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
-on branches in forks and branches in the main repository should only be used to
+on branches in forks, and branches in the main repository should only be used to
 build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
