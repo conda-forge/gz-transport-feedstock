@@ -1,7 +1,7 @@
 context:
   component_name: transport
   repo_name: gz-${{ component_name }}
-  version: "15.0.2"
+  version: "15.1.0"
   major_version: 15
   name: ${{ repo_name }}
   component_version: ${{ component_name }}${{ major_version }}
@@ -14,10 +14,10 @@ recipe:
 
 source:
   - url: https://github.com/gazebosim/${{ repo_name }}/archive/${{ repo_name }}${{ major_version }}_${{ version }}.tar.gz
-    sha256: c8483883f6dae93e154c1d189962f5dea0ca88c846a1463f16bb80063ec39b0f
+    sha256: 8191adf883aaea97d3eba95b7a0f4fba9c0407b5e44ae5c23b673522fb827334
 
 build:
-  number: 3
+  number: 0
 
 outputs:
   - package:
