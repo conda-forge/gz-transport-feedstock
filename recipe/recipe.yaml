@@ -20,7 +20,7 @@ source:
       - patches/0001-python-cmake-use-development-module-component.patch
 
 build:
-  number: 9
+  number: 10
 
 outputs:
   - package:
