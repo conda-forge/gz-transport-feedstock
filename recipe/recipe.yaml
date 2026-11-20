@@ -118,8 +118,10 @@ outputs:
         - pybind11-abi
         - pytest
         - gz-msgs-python
-        # We depend on gz-msgs to ensure that the version of gz-msgs and gz-msgs-python are compatible
-        - gz-msgs
+        # We depend on gz-msgs to ensure that the version of gz-msgs and gz-msgs-python are compatible.
+        # Pin the major to the libgz_msgs variant so the solver never falls back to the
+        # legacy gz-msgs 11 metapackage (depends on libgz-msgs11), which run-exports libgz-msgs <12.
+        - gz-msgs ${{ libgz_msgs }}.*
         # Workaround for errors of type
         # package libgz-sim7-<..> requires <...>, but none of the providers can be installed
         - libabseil
@@ -130,7 +132,7 @@ outputs:
         - python
         - gz-msgs-python
         # We depend on gz-msgs to ensure that the version of gz-msgs and gz-msgs-python are compatible
-        - gz-msgs
+        - gz-msgs ${{ libgz_msgs }}.*
     tests:
       - python:
           imports:
