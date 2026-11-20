@@ -1,0 +1,15 @@
+diff --git a/test/gtest_vendor/CMakeLists.txt b/test/gtest_vendor/CMakeLists.txt
+index 5eeb634..bf6ac61 100644
+--- a/test/gtest_vendor/CMakeLists.txt
++++ b/test/gtest_vendor/CMakeLists.txt
+@@ -8,4 +8,10 @@ target_include_directories(gtest
+   ${CMAKE_CURRENT_SOURCE_DIR}
+   ${CMAKE_CURRENT_SOURCE_DIR}/src
+ )
++# gtest uses pthread (ThreadLocal). Link it explicitly so -lpthread follows
++# every libgtest.a on the link line; otherwise a test whose object does not
++# reference gtest (e.g. NodeShared_TEST with HAVE_ZENOH off) fails to link
++# on glibc < 2.34 with --as-needed.
++find_package(Threads REQUIRED)
++target_link_libraries(gtest PUBLIC Threads::Threads)
+ target_link_libraries(gtest_main gtest)
