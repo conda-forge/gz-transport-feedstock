@@ -1,7 +1,7 @@
 context:
   component_name: transport
   repo_name: gz-${{ component_name }}
-  version: "15.1.0"
+  version: "15.2.0"
   major_version: 15
   name: ${{ repo_name }}
   component_version: ${{ component_name }}${{ major_version }}
@@ -14,12 +14,12 @@ recipe:
 
 source:
   - url: https://github.com/gazebosim/${{ repo_name }}/archive/${{ repo_name }}${{ major_version }}_${{ version }}.tar.gz
-    sha256: 8191adf883aaea97d3eba95b7a0f4fba9c0407b5e44ae5c23b673522fb827334
+    sha256: 060183e1fdf71d1393a8a4672522e17d3720c516450f79f6177f25a801661d03
     patches:
       - patches/0001-python-cmake-use-development-module-component.patch
 
 build:
-  number: 3
+  number: 0
 
 outputs:
   - package:
